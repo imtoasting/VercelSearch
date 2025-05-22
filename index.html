@@ -147,13 +147,17 @@
             }
 
             .links {
-                flex-direction: column;
-                align-items: center;
+                flex-direction: row; /* Keep links side by side */
+                flex-wrap: wrap; /* Allow wrapping if needed */
+                justify-content: center;
+                gap: 10px;
             }
 
             .link-box {
-                width: 150px;
+                width: auto; /* Adjust width to fit content */
+                min-width: 100px; /* Minimum width for readability */
                 text-align: center;
+                padding: 8px 12px; /* Slightly reduce padding for smaller screens */
             }
 
             .footer-links {
